@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Notifications-demo</string>
-    <string name="set_notification">Set Notification</string>
-    <string name="notification_text">You have received a notification</string>
-    <string name="channel_name">Sent</string>
-    <string name="notification_title">Our Notification</string>
+    <string name="set_notification">Set Reminder</string>
+    <string name="notification_text">It\'s time to drink some water</string>
+    <string name="channel_name">Chug Alerts</string>
+    <string name="notification_title">Chug Reminder</string>
+    <string name="drink_water">Have you drank water today?</string>
     <string name="channel_id">notifications_demo_channel</string>
 </resources>

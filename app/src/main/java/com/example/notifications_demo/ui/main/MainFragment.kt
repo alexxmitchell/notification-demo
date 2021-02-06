@@ -51,7 +51,7 @@ class MainFragment : Fragment() {
                     channelName,
                     NotificationManager.IMPORTANCE_LOW) //need to set importance
 
-            notificationChannel.description = "button notification"
+            notificationChannel.description = "Reminder to drink water"
 
             val notificationManager = requireContext().getSystemService(NotificationManager::class.java)
             notificationManager.createNotificationChannel(notificationChannel)
@@ -70,8 +70,7 @@ class MainFragment : Fragment() {
             setContentText(requireContext().getString(R.string.notification_text))
             setAutoCancel(true)
         }
-        val notificationManager = NotificationManagerCompat.from(requireContext())
-        //notifies the notificationmanager to send the notification
+        val notificationManager = requireContext().getSystemService(NotificationManager::class.java)
         notificationManager.notify(NOTIFICATION_ID, builder.build())
     }
 }
